@@ -13,8 +13,23 @@
 // Emoji options
 var emoji = true;
 var keyword = 'Brexit';
-var emoji_before_keyword = '🇬🇧'; // TODO: use character encoding values
-var emoji_after_keyword = '🍺';
+var patriotic = true;
+var sad = false;
+var angry = false;
+
+if (patriotic) {
+  var emoji_before_keyword = '🇬🇧'; // TODO: use unicode encoding values
+  var emoji_after_keyword = '🍺';
+}
+
+if (sad) {
+  var emoji_before_keyword = '😢';
+  var emoji_after_keyword = '😭';
+}
+if (angry) {
+  var emoji_before_keyword = '🇪🇺';
+  var emoji_after_keyword = '😡';
+}
 
 // Code
 
@@ -27,5 +42,5 @@ for (i = 0; i < bbctitle.length; i++) {
   else {
     bbctitle[i].innerHTML = bbctitle[i].innerHTML + ' after the ' + keyword + ' vote';
   }
-  
+
 }
