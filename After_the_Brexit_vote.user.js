@@ -10,8 +10,14 @@
 
 // Options
 
+// Context Options
+var turn_The_Guardian_into_Mens_Rights_activists = true; // Reserved for future use
+var no_vegans = true;
+var no_SNP = true;
+var no_Corbyn = true;
+
 // Emoji options
-var emoji = true;
+var emoji = false;
 var keyword = 'Brexit';
 var patriotic = true;
 var sad = false;
